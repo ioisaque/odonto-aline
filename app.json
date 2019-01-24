@@ -1,0 +1,33 @@
+{
+  "expo": {
+    "name": "Odonto Aline",
+    "description": "Agenda - Odonto Aline.",
+    "slug": "odontoaline",
+    "privacy": "public",
+    "sdkVersion": "31.0.0",
+    "platforms": ["ios", "android"],
+    "version": "1.1.1",
+    "orientation": "portrait",
+    "icon": "./assets/icone_512.png",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "cover",
+      "backgroundColor": "#ffffff"
+    },
+    "updates": {
+      "fallbackToCacheTimeout": 0
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "buildNumber": "3",
+      "supportsTablet": true,
+      "bundleIdentifier": "pro.sige.odontoaline"
+    },
+    "android": {
+      "versionCode": 3,
+      "package": "pro.sige.odontoaline"
+    }
+  }
+}
