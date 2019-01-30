@@ -21,8 +21,8 @@
       "**/*"
     ],
     "ios": {
-      "buildNumber": "3",
-      "supportsTablet": true,
+      "buildNumber": "4",
+      "supportsTablet": false,
       "bundleIdentifier": "pro.sige.odontoaline"
     },
     "android": {
