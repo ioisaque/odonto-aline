@@ -10,18 +10,28 @@ import BottomNav from './components/BottomNav'
 import styles from '../assets/styles/otherStyles';
 import commonStyles from '../assets/styles/commonStyles';
 
-export default class Horas extends Component{
-  static navigationOptions = {
-    headerLeft: (
-      <Image
-        source={require('../assets/icon.png')}
-        style={styles.headerLOGO}
-      />
-    ),
-    headerTitle: (null),
-    headerRight: (
-      <Text style={styles.headerRightText}>{moment(new Date()).format('dddd, DD [de] MMMM')}</Text>
-    )
+export default class Horas extends Component {
+  static navigationOptions = ({ navigation }) => {
+    const { params = {} } = navigation.state;
+
+    return {
+      headerLeft: (
+        <Image
+          source={require('../assets/icon.png')}
+          style={styles.headerLOGO}
+        />
+      ),
+      headerTitle: (null),
+      headerRight: (
+        <Text style={styles.headerRightText}>{moment(params.data).format('dddd, DD [de] MMMM')}</Text>
+      )
+    };
+  };  
+
+  componentDidMount() {
+    this.props.navigation.setParams({
+      data: globalState.dataSelecionada
+    });
   }
 
   constructor(props) {
