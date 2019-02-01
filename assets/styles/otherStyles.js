@@ -171,10 +171,9 @@ export default StyleSheet.create({
     backgroundColor: commonStyles.colors.white,
   },
   topHeader: {
-    backgroundColor: commonStyles.colors.white,
-    padding: 5,
     paddingTop: 30,
-    paddingHorizontal: 15
+    paddingHorizontal: 30,
+    backgroundColor: commonStyles.colors.white
   },
   pageBody: {
     flex: 5,
@@ -206,7 +205,6 @@ export default StyleSheet.create({
   welcomeText: {
     fontSize: 20,
     textAlign: 'right',
-    marginRight: 50,
     textTransform: 'capitalize',
     color: commonStyles.colors.primary,
   },
@@ -384,7 +382,7 @@ export default StyleSheet.create({
     borderTopLeftRadius: 5,
   },
   paciente: {
-    width: '75%',
+    width: '70%',
     justifyContent: 'flex-start',
   },
   horario: {
@@ -396,8 +394,7 @@ export default StyleSheet.create({
     textAlign: 'center',
     marginRight: 5,
     marginBottom: 5,
-    fontSize: 25,
-    
+    fontSize: 25,    
   },
 
   modalidade: {

@@ -148,7 +148,7 @@ export default class Agendar extends Component{
       return list.filter((value, index, self) => self.indexOf(value) === index)
     }
 
-    _goToMyAppointments = (apptGreen, day) => { 
+    _goToMyAppointments = (apptGreen, day) => {
       //console.log('apptGreen => ', apptGreen)
       console.log('RUNNING => @_goToMyAppointments() => ', `[${day}]`)
       if (apptGreen.includes(day))
