@@ -21,12 +21,13 @@
       "**/*"
     ],
     "ios": {
-      "buildNumber": "4",
+      "buildNumber": "5",
       "supportsTablet": false,
       "bundleIdentifier": "pro.sige.odontoaline"
     },
     "android": {
       "versionCode": 3,
+      "permissions": [],
       "package": "pro.sige.odontoaline"
     }
   }
