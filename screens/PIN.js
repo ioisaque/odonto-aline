@@ -1,6 +1,7 @@
 import React, {Component} from 'react'
 import PinView from 'react-native-pin-view'
-import { View, Text, AsyncStorage } from 'react-native'
+import Icon from 'react-native-vector-icons/FontAwesome'
+import { TouchableOpacity, View, Text, AsyncStorage } from 'react-native'
 
 import { globalState } from '../App'
 import styles from '../assets/styles/otherStyles'
@@ -22,7 +23,9 @@ export default class PIN extends Component {
   }
 
   render () {
+    const { navigate } = this.props.navigation
     console.log('#=> Navigated to PIN.')
+    
       return(
         <View style={styles.pinContainer}>
           <Text style={styles.PINfeedback} color={this.state.feedBackColor}>{this.state.msgFeedBack}</Text>
@@ -34,6 +37,11 @@ export default class PIN extends Component {
                 loginOnWebservice(val, clear, this.handleWebserviceResponse)
               } }
             />
+
+            <TouchableOpacity style={styles.loginButton} onPress={() => navigate('Login')}>
+              <Icon style={styles.loginButtonIcon} name="sign-in" color="#fff" size={20}/>
+              <Text style={styles.loginButtonText}> Entrar com E-mail </Text>
+            </TouchableOpacity>
         </View>
       )
   }

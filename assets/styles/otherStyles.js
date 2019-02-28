@@ -129,26 +129,30 @@ export default StyleSheet.create({
     alignSelf: 'center'
   },
   pinContainer: {
-    flex: 1,
+    height: '100%',
+    paddingTop: '30%',
+    paddingBottom: '10%',
     justifyContent: 'center',
+    alignItems: 'center',
     backgroundColor: commonStyles.colors.white,
   },
   loginContainer: {
     flex: 1,
     justifyContent: 'center',
     alignItems: 'center',
-    backgroundColor: '#F5FCFF',
+    backgroundColor: commonStyles.colors.white,
   },
   loginLogo: {
     width: 310,
     height: 140,
-    marginVertical: 75,
+    marginBottom: 45,
   },
   loginButton: {
+    width: '75%',
     height: 50,
     padding: 10,
     borderRadius: 50,
-    marginBottom: 75,
+    marginBottom: 15,
     flexDirection: 'row',
     alignItems: 'center',
     alignContent: 'center',
@@ -156,12 +160,26 @@ export default StyleSheet.create({
     backgroundColor: commonStyles.colors.primary
   },
   loginButtonText:{
-    color: '#FFF',
-    fontSize: 18,
-    marginHorizontal: 20
+    color: commonStyles.colors.white,
+    fontSize: 16,
+    marginLeft: 10,
+    marginRight: 20,
   },
   loginButtonIcon: {
-    marginLeft: 20
+    marginLeft: 20,
+    color: commonStyles.colors.white
+  },
+
+  inputMail: {
+    width: '75%',
+    height: 50,
+    padding: 10,
+    borderWidth: 2,
+    borderRadius: 50,
+    marginBottom: 15,
+    textAlign: 'center',
+    color: commonStyles.colors.primary,
+    borderColor: commonStyles.colors.primary
   },
 
   ///////////////// PERFIL SCREEN /////////////////
